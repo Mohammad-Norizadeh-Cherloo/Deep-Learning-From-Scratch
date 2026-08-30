@@ -110,7 +110,6 @@ The repository is divided into two main parts:
 ### Practical Projects Summary
 
 #### Digit Classification
-![Digit Classification](images/digit-number-classification.png)
 ![BiLSTM Digits](images/digit-classification-using-BiLSTM.png)
 
 #### Breast Cancer Classification
