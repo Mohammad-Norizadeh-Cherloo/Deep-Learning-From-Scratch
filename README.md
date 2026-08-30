@@ -2,7 +2,7 @@
 
 **Complete from-scratch implementations of core Deep Learning models with full manual forward & backward passes**
 
-![Deep Learning Overview](images/overview.png)
+![Deep Learning From Scratch](images/Deep-Learning-From-scratch.png)
 
 **Author:** Mohammad Norizadeh Cherloo  
 Educator & Researcher in Machine Learning, Deep Learning, Neural Decoding, Biomedical Signal Processing, and Brain-Computer Interfaces
@@ -11,6 +11,7 @@ Educator & Researcher in Machine Learning, Deep Learning, Neural Decoding, Biome
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Profile-green)](https://scholar.google.com/citations?user=fIKpYm8AAAAJ)
 [![YouTube](https://img.shields.io/badge/YouTube-@Mrcherloo-red)](https://www.youtube.com/@Mrcherloo)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/mohammad-norizadeh-cherloo/)
+
 ---
 
 ### About This Repository
@@ -29,60 +30,20 @@ The repository is divided into two main parts:
 
 ### Table of Contents
 
-#### 1. Deep Learning From Scratch (Manual Implementation)
-- [Multilayer Perceptron (MLP)](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP))
-  - [Cost Functions](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP)/1-%20Cost%20Functions)
-    - [MLP with LMS (MSE)](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP)/1-%20Cost%20Functions/1-%20MLP-LMS)
-    - [MLP with Cross-Entropy](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP)/1-%20Cost%20Functions/2-MLP-Cross%20Entropy)
-  - [Optimizers](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP)/2-%20Optimizers)
-    - [SGD](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP)/2-%20Optimizers/1-%20SGD)
-    - [SGD with Momentum](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP)/2-%20Optimizers/2-%20SGD-Momentum)
-    - [AdaGrad](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP)/2-%20Optimizers/3-%20AdaGrad)
-    - [RMSprop](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP)/2-%20Optimizers/4-%20RMSprop)
-    - [Adam](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP)/2-%20Optimizers/5-%20ADAM)
+- [1. Deep Learning From Scratch (Manual Implementation)](#1-deep-learning-from-scratch-manual-implementation)
+- [2. Deep Learning with PyTorch](#2-deep-learning-with-pytorch)
+- [Practical Projects Summary](#practical-projects-summary)
+- [Coming Next](#coming-next)
+- [Contact](#contact)
 
-- [Convolutional Neural Networks (CNNs)](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/2-%20Covnvolutional%20Neural%20Netwroks%20(CNNs))
-  - [LeNet-5 on Digits](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/2-%20Covnvolutional%20Neural%20Netwroks%20(CNNs)/project01_LeNet05_digits.ipynb)
-  - [LeNet-5 + BatchNorm on Digits](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/2-%20Covnvolutional%20Neural%20Netwroks%20(CNNs)/project02_LeNet05_with_BN_digits.ipynb)
-  - [LeNet-5 on MNIST](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/2-%20Covnvolutional%20Neural%20Netwroks%20(CNNs)/project03_LeNet05_MNIST.ipynb)
-  - [LeNet-5 + BatchNorm on MNIST](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/2-%20Covnvolutional%20Neural%20Netwroks%20(CNNs)/project04_LeNet05_with_BN_MNIST.ipynb)
-
-- [Recurrent Neural Networks (RNNs)](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/3-%20Recurrent%20Neural%20Networks%20(RNNs))
-  - [Vanilla RNN – Air Quality](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/3-%20Recurrent%20Neural%20Networks%20(RNNs)/project01_RNN_air.ipynb)
-  - [Vanilla RNN – Digits](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/3-%20Recurrent%20Neural%20Networks%20(RNNs)/project01_RNN_digits.ipynb)
-  - [BiRNN – Digits](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/3-%20Recurrent%20Neural%20Networks%20(RNNs)/project02_BiRNN_digits.ipynb)
-  - [LSTM – Air Quality](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/3-%20Recurrent%20Neural%20Networks%20(RNNs)/project02_LSTM_air.ipynb)
-  - [LSTM – Digits](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/3-%20Recurrent%20Neural%20Networks%20(RNNs)/project03_LSTM_digits.ipynb)
-  - [BiLSTM – Digits](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/3-%20Recurrent%20Neural%20Networks%20(RNNs)/project04_BiLSTMs_digits.ipynb)
-
-#### 2. Deep Learning with PyTorch
-- [MLP](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/1-%20MLP)
-  - [MLP – Digits](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning-PyTorch/1-%20MLP/project01_MLP_digits.ipynb)
-  - [MLP – Air Quality](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning-PyTorch/1-%20MLP/project02_MLP_air.ipynb)
-
-- [CNNs](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/2-%20CNNs)
-  - [LeNet-5 – MNIST](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning-PyTorch/2-%20CNNs/project01_Lent05_MNIST.ipynb)
-  - [AlexNet – MNIST](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning-PyTorch/2-%20CNNs/project02_1_AlexNet_MNIST.ipynb)
-  - [AlexNet (Modern) – MNIST](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning-PyTorch/2-%20CNNs/project02_2_AlexNet_modern_MNIST.ipynb)
-  - [VGG – MNIST](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning-PyTorch/2-%20CNNs/project03_VGG_MNIST.ipynb)
-  - [NiN – MNIST](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning-PyTorch/2-%20CNNs/project04_NiN_MNIST.ipynb)
-  - [GoogLeNet – MNIST](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning-PyTorch/2-%20CNNs/project06_1_GoogleNet_2014_auxiliary_MNIST.ipynb)
-  - [GoogLeNet (Modern) – MNIST](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning-PyTorch/2-%20CNNs/project06_2_GoogleNet_modern_MNIST.ipynb)
-  - [PlainNet – MNIST](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning-PyTorch/2-%20CNNs/project07_LightPlainNet.ipynb)
-  - [ResNet – MNIST](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/blob/main/Deep%20Learning-PyTorch/2-%20CNNs/project08_LightResNet.ipynb)
-
-- [RNNs](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/3-%20RNNs)
-  - [RNN / GRU / LSTM – Digits & Air Quality](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/3-%20RNNs)
-  - [Signal Processing (EEG)](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/3-%20RNNs/Signal%20Processing)
-  - [Sentiment Analysis](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/3-%20RNNs/sentiment%20analysis)
-  - [Text Generation](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/3-%20RNNs/text_generation)
 ---
+
 ### 1. Deep Learning From Scratch (Manual Implementation)
 
 **Main Folder:** [Deep Learning From Scratch (manual implementation)](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation))
 
 #### Multilayer Perceptron (MLP)
-![MLP](images/mlp.png)
+![Cost Functions](images/cost-functions.png)
 
 - Manual forward and backward propagation
 - Cost functions (MSE / LMS and Cross-Entropy)
@@ -90,8 +51,18 @@ The repository is divided into two main parts:
 
 📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP))
 
+**Optimizers Visualization:**
+
+| Optimizer | Image |
+|---------|-------|
+| SGD | ![SGD](images/SGD.png) |
+| SGD with Momentum | ![SGD Momentum](images/sgd-with-momentum.png) |
+| AdaGrad | ![AdaGrad](images/adagrad.png) |
+| RMSprop | ![RMSprop](images/rmsprop.png) |
+| Adam | ![Adam](images/adam.png) |
+
 #### Convolutional Neural Networks (CNNs)
-![CNN](images/cnn.png)
+![LeNet](images/LeNet.png)
 
 - Manual implementation of Conv2d, Average Pooling, and Fully Connected layers
 - Batch Normalization (1d & 2d)
@@ -99,14 +70,18 @@ The repository is divided into two main parts:
 
 📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/2-%20Covnvolutional%20Neural%20Netwroks%20(CNNs))
 
+![Batch Normalization](images/batch-normalization.png)
+
 #### Recurrent Neural Networks (RNNs)
-![RNN](images/rnn.png)
+![RNNs](images/Recurrent-Neural-Networks-(RNNs).png)
 
 - Vanilla RNN and Bidirectional RNN
 - LSTM and Bidirectional LSTM
 - Full Backpropagation Through Time (BPTT)
 
 📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/3-%20Recurrent%20Neural%20Networks%20(RNNs))
+
+![BiLSTM](images/BiLSTM.png)
 
 ---
 
@@ -117,21 +92,41 @@ The repository is divided into two main parts:
 #### MLP
 📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/1-%20MLP)
 
-#### CNNs
+#### CNNs (Modern Architectures)
+![AlexNet](images/alexnet.png)
+![GoogLeNet](images/googleNet.png)
+![NiN](images/NiN--Networks-in-Networks.png)
+![ResNet](images/ResNet.png)
+
 - LeNet-5, AlexNet, VGG, NiN, GoogLeNet, PlainNet, ResNet
 
 📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/2-%20CNNs)
 
 #### RNNs
-- RNN, GRU, LSTM
-- EEG Signal Processing, Sentiment Analysis, Text Generation
-
 📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/3-%20RNNs)
 
 ---
-### Practical Projects
 
-![Projects](images/projects.png)
+### Practical Projects Summary
+
+#### Digit Classification
+![Digit Classification](images/digit-number-classification.png)
+![BiLSTM Digits](images/digit-classification-using-BiLSTM.png)
+
+#### Breast Cancer Classification
+![Breast Cancer](images/breast-cancer.png)
+
+#### Iris Classification
+![Iris](images/iris.png)
+
+#### EEG Signal Analysis
+![EEG](images/eeg-signal-analysis.png)
+
+#### Spam Detection
+![Spam Detection](images/spam-detection.png)
+
+#### Text Generation
+![Text Generation](images/text-generation-using-RNNs.png)
 
 | Project                              | Model(s) Used                  | Type              |
 |--------------------------------------|--------------------------------|-------------------|
@@ -139,39 +134,10 @@ The repository is divided into two main parts:
 | Breast Cancer / Iris Classification  | MLP                            | Classification    |
 | Digits Classification                | MLP, RNN, LSTM, BiLSTM         | Classification    |
 | Air Quality Prediction (UCI)         | MLP, RNN, LSTM, GRU            | Time Series       |
-| MNIST Digit Classification           | LeNet-5 + BatchNorm            | Classification    |
+| MNIST Digit Classification           | LeNet-5, AlexNet, VGG, ResNet  | Classification    |
 | Epilepsy Detection from EEG          | GRU                            | Biomedical        |
 | Spam Detection                       | LSTM                           | NLP               |
 | Word Generation                      | LSTM                           | NLP               |
-
----
-
-### Optimizers & Cost Functions
-
-![Optimizers](images/optimizers.png)
-
-**Cost Functions (from scratch):**
-- Mean Squared Error (MSE)
-- Binary Cross-Entropy
-- Categorical Cross-Entropy
-
-**Optimizers (from scratch + visualization):**
-- SGD
-- SGD with Momentum
-- AdaGrad
-- RMSprop
-- Adam
-
----
-
-### PyTorch Implementations
-
-**Main Folder:** [Deep Learning-PyTorch](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch)
-
-Clean PyTorch versions of the same models are also provided for comparison and practical use:
-- MLP, RNN, GRU, LSTM
-- LeNet-5, AlexNet, VGG, NiN, GoogLeNet, ResNet
-- Applied on MNIST, Digits, Air Quality, EEG, and text data
 
 ---
 
@@ -184,8 +150,18 @@ Clean PyTorch versions of the same models are also provided for comparison and p
 
 ### Contact
 
-- **Website:** [https://onlinebme.com](https://onlinebme.com)
-- **YouTube:** [https://www.youtube.com/@Mrcherloo](https://www.youtube.com/@Mrcherloo)
-- **LinkedIn:** [https://www.linkedin.com/in/mohammad-norizadeh-cherloo](https://www.linkedin.com/in/mohammad-norizadeh-cherloo)
-- **Google Scholar:** [Mohammad Norizadeh Cherloo](https://scholar.google.com/citations?user=fIKpYm8AAAAJ)
-- **GitHub:** [Mohammad-Norizadeh-Cherloo](https://github.com/Mohammad-Norizadeh-Cherloo)
+- Website: [https://onlinebme.com](https://onlinebme.com)  
+- YouTube: [https://www.youtube.com/@Mrcherloo](https://www.youtube.com/@Mrcherloo)  
+- LinkedIn: [https://www.linkedin.com/in/mohammad-norizadeh-cherloo](https://www.linkedin.com/in/mohammad-norizadeh-cherloo)  
+- Google Scholar: [Mohammad Norizadeh Cherloo](https://scholar.google.com/citations?user=fIKpYm8AAAAJ)  
+- GitHub: [Mohammad-Norizadeh-Cherloo](https://github.com/Mohammad-Norizadeh-Cherloo)
+
+---
+
+An old man once told me:  
+*"If you want to drive more easily in a city, first walk through that city on foot!"*
+
+The same is true in Artificial Intelligence.  
+If you want to use or improve algorithms more effectively, you should first implement them from scratch. Only then will you gain a deep and clear understanding of the algorithm and the problem it solves.
+
+— Mohammad Norizadeh Cherloo
