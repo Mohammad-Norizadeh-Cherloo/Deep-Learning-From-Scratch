@@ -1,11 +1,12 @@
 # Deep Learning From Scratch
 
-**Complete from-scratch implementations of core Deep Learning models with full manual forward & backward passes**
+**From-scratch implementations of neural networks, optimization algorithms, and deep learning architectures — from mathematical foundations and manual forward/backward propagation to practical PyTorch implementations.**
 
 ![Deep Learning From Scratch](images/Deep-Learning-From-scratch.png)
 
-**Author:** Mohammad Norizadeh Cherloo  
-Educator & Researcher in Machine Learning, Deep Learning, Neural Decoding, Biomedical Signal Processing, and Brain-Computer Interfaces
+**Author:** Mohammad Norizadeh Cherloo
+
+Machine Learning · Deep Learning · Neural Decoding · Biomedical Signal Processing · Brain-Computer Interfaces
 
 [![Website](https://img.shields.io/badge/Website-onlinebme.com-blue)](https://onlinebme.com/)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Profile-green)](https://scholar.google.com/citations?user=fIKpYm8AAAAJ)
@@ -14,153 +15,260 @@ Educator & Researcher in Machine Learning, Deep Learning, Neural Decoding, Biome
 
 ---
 
-### About This Repository
+## About This Repository
 
-This repository contains **from-scratch implementations** of fundamental Deep Learning algorithms.  
+This repository documents my work on **Deep Learning from first principles**, with an emphasis on understanding the mathematics and internal operations of neural networks.
 
-Unlike most repositories that only call high-level libraries, here the core components (forward pass, backward pass, cost functions, and optimizers) are implemented manually. The goal is to provide a clear and deep understanding of how these models actually work.
+The core philosophy is:
 
-The repository is divided into two main parts:
-- **From-Scratch (Manual Implementation)**
-- **PyTorch Implementations**
+> **Understand the mathematics → derive the algorithm → implement it manually → validate it → use modern frameworks for practical models.**
 
-**Future updates:** Attention Mechanisms and Transformers will be added.
+Rather than relying only on high-level deep-learning libraries, the first part of this repository implements fundamental components **manually**, including forward propagation, backpropagation, cost functions, optimization algorithms, convolution, pooling, batch normalization, and recurrent-network operations.
 
----
+The second part moves to **PyTorch implementations** of classical and modern neural-network architectures and applies them to practical problems in computer vision, time-series analysis, EEG signal processing, and natural language processing.
 
-### Table of Contents
+### Repository Structure
 
-- [1. Deep Learning From Scratch (Manual Implementation)](#1-deep-learning-from-scratch-manual-implementation)
-- [2. Deep Learning with PyTorch](#2-deep-learning-with-pytorch)
-- [Practical Projects Summary](#practical-projects-summary)
-- [Coming Next](#coming-next)
-- [Contact](#contact)
+* **Part I — Deep Learning From Scratch:** Manual mathematical and algorithmic implementations
+* **Part II — Deep Learning with PyTorch:** Practical neural-network architectures and applications
 
 ---
 
-### 1. Deep Learning From Scratch (Manual Implementation)
+## Table of Contents
 
-**Main Folder:** [Deep Learning From Scratch (manual implementation)](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation))
+* [1. Deep Learning From Scratch](#1-deep-learning-from-scratch)
 
-#### Multilayer Perceptron (MLP)
+  * [Multilayer Perceptron](#multilayer-perceptron-mlp)
+  * [Optimization Algorithms](#optimization-algorithms)
+  * [Convolutional Neural Networks](#convolutional-neural-networks-cnns)
+  * [Recurrent Neural Networks](#recurrent-neural-networks-rnns)
+* [2. Deep Learning with PyTorch](#2-deep-learning-with-pytorch)
+
+  * [MLP](#pytorch-mlp)
+  * [CNN Architectures](#pytorch-cnns)
+  * [RNN, LSTM and GRU](#pytorch-rnn-lstm-and-gru)
+* [Practical Projects](#practical-projects)
+* [Full Video Course](#full-video-course)
+* [Contact](#contact)
+
+---
+
+# 1. Deep Learning From Scratch
+
+**[Open the complete manual implementation folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20%28manual%20impelementation%29)**
+
+The manual implementation section focuses on understanding the mathematical operations behind neural networks rather than treating them as black boxes.
+
+---
+
+## Multilayer Perceptron (MLP)
+
 ![Cost Functions](images/cost-functions.png)
 
-- Manual forward and backward propagation
-- Cost functions (MSE / LMS and Cross-Entropy)
-- Optimizers (SGD, Momentum, AdaGrad, RMSprop, Adam)
+Manual implementation of multilayer perceptrons, including forward propagation, backward propagation, cost functions, and optimization.
 
-📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/1-%20Multilayer%20Perceptron(MLP))
+* Forward propagation
+* Backpropagation
+* MSE / LMS cost function
+* Cross-Entropy loss
+* Gradient-based optimization
 
-**Optimizers Visualization:**
+**[Open MLP implementations](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20%28manual%20impelementation%29/1-%20Multilayer%20Perceptron%28MLP%29)**
 
-| Optimizer | Image |
-|---------|-------|
-| SGD | ![SGD](images/SGD.png) |
-| SGD with Momentum | ![SGD Momentum](images/sgd-with-momentum.png) |
-| AdaGrad | ![AdaGrad](images/adagrad.png) |
-| RMSprop | ![RMSprop](images/rmsprop.png) |
-| Adam | ![Adam](images/adam.png) |
+---
 
-#### Convolutional Neural Networks (CNNs)
+## Optimization Algorithms
+
+Five optimization algorithms are implemented manually and compared through convergence experiments.
+
+| Optimizer             | Visualization                                 |
+| --------------------- | --------------------------------------------- |
+| **SGD**               | ![SGD](images/SGD.png)                        |
+| **SGD with Momentum** | ![SGD Momentum](images/sgd-with-momentum.png) |
+| **AdaGrad**           | ![AdaGrad](images/adagrad.png)                |
+| **RMSprop**           | ![RMSprop](images/rmsprop.png)                |
+| **Adam**              | ![Adam](images/adam.png)                      |
+
+**[Open optimizer implementations](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20%28manual%20impelementation%29/1-%20Multilayer%20Perceptron%28MLP%29/2-%20Optimizers)**
+
+---
+
+## Convolutional Neural Networks (CNNs)
+
 ![LeNet](images/LeNet.png)
 
-- Manual implementation of Conv2d, Average Pooling, and Fully Connected layers
-- Batch Normalization (1d & 2d)
-- LeNet-5 architecture (with and without BatchNorm)
+Manual implementation of the fundamental components of convolutional neural networks.
 
-📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/2-%20Covnvolutional%20Neural%20Netwroks%20(CNNs))
+* 2D convolution
+* Average pooling
+* Fully connected layers
+* Batch Normalization
+* LeNet-5
+* LeNet-5 with Batch Normalization
+
+**[Open manual CNN implementations](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20%28manual%20impelementation%29/2-%20Covnvolutional%20Neural%20Netwroks%20%28CNNs%29)**
 
 ![Batch Normalization](images/batch-normalization.png)
 
-#### Recurrent Neural Networks (RNNs)
-![RNNs](images/Recurrent-Neural-Networks-(RNNs).png)
+---
 
-- Vanilla RNN and Bidirectional RNN
-- LSTM and Bidirectional LSTM
-- Full Backpropagation Through Time (BPTT)
-
-📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20(manual%20impelementation)/3-%20Recurrent%20Neural%20Networks%20(RNNs))
-
+## Recurrent Neural Networks (RNNs)
 ![BiLSTM](images/BiLSTM.png)
+Manual implementations of recurrent neural networks, including sequence processing and Backpropagation Through Time.
+
+* Vanilla RNN
+* Bidirectional RNN
+* LSTM
+* Bidirectional LSTM
+* Backpropagation Through Time (BPTT)
+
+**[Open manual RNN implementations](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning%20From%20Scratch%20%28manual%20impelementation%29/3-%20Recurrent%20Neural%20Networks%20%28RNNs%29)**
 
 ---
 
-### 2. Deep Learning with PyTorch
+# 2. Deep Learning with PyTorch
 
-**Main Folder:** [Deep Learning-PyTorch](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch)
+**[Open the complete PyTorch implementation folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch)**
 
-#### MLP
-📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/1-%20MLP)
+After studying and implementing the underlying operations manually, the repository moves to practical implementations using **PyTorch**.
 
-#### CNNs (Modern Architectures)
+---
+
+## PyTorch MLP
+
+Implementations of multilayer perceptrons for classification and regression.
+
+**[Open PyTorch MLP implementations](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/1-%20MLP)**
+
+---
+
+## PyTorch CNNs
+
 ![AlexNet](images/alexnet.png)
+
 ![GoogLeNet](images/googleNet.png)
+
 ![NiN](images/NiN--Networks-in-Networks.png)
+
 ![ResNet](images/ResNet.png)
 
-- LeNet-5, AlexNet, VGG, NiN, GoogLeNet, PlainNet, ResNet
+The CNN section contains implementations and experiments with influential convolutional neural-network architectures:
 
-📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/2-%20CNNs)
+* **LeNet-5**
+* **AlexNet**
+* **VGG**
+* **Network in Network (NiN)**
+* **GoogLeNet**
+* **Light PlainNet**
+* **Light ResNet**
 
-#### RNNs
-📁 [Go to folder](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/3-%20RNNs)
+**[Open PyTorch CNN implementations](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/2-%20CNNs)**
 
 ---
 
-### Practical Projects Summary
+## PyTorch RNN, LSTM and GRU
+![RNNs](images/Recurrent-Neural-Networks-\(RNNs\).png)
+The recurrent-network section covers sequence models for classification, time-series prediction, EEG signal analysis, and natural language processing.
 
-#### Digit Classification
+* **RNN**
+* **GRU**
+* **LSTM**
+* **Bidirectional LSTM**
+
+**[Open PyTorch RNN implementations](https://github.com/Mohammad-Norizadeh-Cherloo/Deep-Learning-From-Scratch/tree/main/Deep%20Learning-PyTorch/3-%20RNNs)**
+
+---
+
+# Practical Projects
+
+The implementations are applied to problems across **computer vision, regression, time-series prediction, biomedical signal processing, and natural language processing**.
+
+### Digit Classification
+
 ![BiLSTM Digits](images/digit-classification-using-BiLSTM.png)
 
-#### Breast Cancer Classification
+### Breast Cancer Classification
+
 ![Breast Cancer](images/breast-cancer.png)
 
-#### Iris Classification
+### Iris Classification
+
 ![Iris](images/iris.png)
 
-#### EEG Signal Analysis
+### EEG Signal Analysis
+
 ![EEG](images/eeg-signal-analysis.png)
 
-#### Spam Detection
+### Spam Detection
+
 ![Spam Detection](images/spam-detection.png)
 
-#### Text Generation
+### Text Generation
+
 ![Text Generation](images/text-generation-using-RNNs.png)
 
-| Project                              | Model(s) Used                  | Type              |
-|--------------------------------------|--------------------------------|-------------------|
-| House Price Prediction               | MLP                            | Regression        |
-| Breast Cancer / Iris Classification  | MLP                            | Classification    |
-| Digits Classification                | MLP, RNN, LSTM, BiLSTM         | Classification    |
-| Air Quality Prediction (UCI)         | MLP, RNN, LSTM, GRU            | Time Series       |
-| MNIST Digit Classification           | LeNet-5, AlexNet, VGG, ResNet  | Classification    |
-| Epilepsy Detection from EEG          | GRU                            | Biomedical        |
-| Spam Detection                       | LSTM                           | NLP               |
-| Word Generation                      | LSTM                           | NLP               |
+| Project                      | Model(s)                      | Application                  |
+| ---------------------------- | ----------------------------- | ---------------------------- |
+| House Price Prediction       | MLP                           | Regression                   |
+| Breast Cancer Classification | MLP                           | Classification               |
+| Iris Classification          | MLP                           | Classification               |
+| Digit Classification         | MLP, RNN, LSTM, BiLSTM        | Classification               |
+| Air Quality Prediction       | MLP, RNN, LSTM, GRU           | Time Series                  |
+| MNIST Digit Classification   | LeNet-5, AlexNet, VGG, ResNet | Computer Vision              |
+| Epilepsy Detection from EEG  | GRU                           | Biomedical Signal Processing |
+| Spam Detection               | LSTM                          | NLP                          |
+| Word Generation              | LSTM                          | NLP                          |
 
 ---
 
-### Coming Next
+# From Mathematical Foundations to Practical Deep Learning
 
-- Attention Mechanisms
-- Transformer Architecture
+The repository follows a progression from understanding the internal mathematics of neural networks to using modern deep-learning frameworks:
+
+```text
+Mathematical Foundations
+        ↓
+Forward Propagation
+        ↓
+Backpropagation
+        ↓
+Cost Functions
+        ↓
+Optimization Algorithms
+        ↓
+Manual Neural-Network Implementations
+        ↓
+Classical CNN / RNN Architectures
+        ↓
+PyTorch Implementations
+        ↓
+Practical Applications
+```
+
+This progression is the central philosophy of the repository.
 
 ---
 
-### Contact
+# Full Video Course
 
-- Website: [https://onlinebme.com](https://onlinebme.com)  
-- YouTube: [https://www.youtube.com/@Mrcherloo](https://www.youtube.com/@Mrcherloo)  
-- LinkedIn: [https://www.linkedin.com/in/mohammad-norizadeh-cherloo](https://www.linkedin.com/in/mohammad-norizadeh-cherloo)  
-- Google Scholar: [Mohammad Norizadeh Cherloo](https://scholar.google.com/citations?user=fIKpYm8AAAAJ)  
-- GitHub: [Mohammad-Norizadeh-Cherloo](https://github.com/Mohammad-Norizadeh-Cherloo)
+The mathematical foundations, neural-network concepts, and step-by-step implementations are also covered in my Deep Learning courses.
+
+**→ [OnlineBME – Deep Learning & Neural Networks with PyTorch](https://onlinebme.com/product/implementing-neural-networks-with-pytorch/)**
 
 ---
 
-An old man once told me:  
-*"If you want to drive more easily in a city, first walk through that city on foot!"*
+# Contact
 
-The same is true in Artificial Intelligence.  
-If you want to use or improve algorithms more effectively, you should first implement them from scratch. Only then will you gain a deep and clear understanding of the algorithm and the problem it solves.
+* **Website:** [OnlineBME](https://onlinebme.com/)
+* **YouTube:** [@Mrcherloo](https://www.youtube.com/@Mrcherloo)
+* **LinkedIn:** [Mohammad Norizadeh Cherloo](https://www.linkedin.com/in/mohammad-norizadeh-cherloo/)
+* **Google Scholar:** [Mohammad Norizadeh Cherloo](https://scholar.google.com/citations?user=fIKpYm8AAAAJ)
+* **GitHub:** [Mohammad-Norizadeh-Cherloo](https://github.com/Mohammad-Norizadeh-Cherloo)
 
-— Mohammad Norizadeh Cherloo
+---
+
+> **“An old man once told me if you want to drive more easily in a city, first walk through that city on foot.”**
+>
+> The same is true in Artificial Intelligence. If you want to use or improve algorithms more effectively, first implement them from scratch. Only then will you gain a deeper understanding of the algorithm and the problem it solves.
+>
+> — Mohammad Norizadeh Cherloo
