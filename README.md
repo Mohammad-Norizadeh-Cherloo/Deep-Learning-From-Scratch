@@ -48,8 +48,16 @@ The second part moves to **PyTorch implementations** of classical and modern neu
   * [CNN Architectures](#pytorch-cnns)
   * [RNN, LSTM and GRU](#pytorch-rnn-lstm-and-gru)
 * [Practical Projects](#practical-projects)
+* [From Mathematical Foundations to Practical Deep Learning](#from-mathematical-foundations-to-practical-deep-learning)
+* [Attention Mechanisms & Transformers — Coming Soon](#attention-mechanisms--transformers--coming-soon)
 * [Full Video Course](#full-video-course)
 * [Contact](#contact)
+
+---
+
+# Attention Mechanisms & Transformers — Coming Soon
+
+**Attention mechanisms and Transformer architectures will be added soon**, continuing the same progression from mathematical foundations and manual implementations to practical PyTorch models.
 
 ---
 
